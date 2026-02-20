@@ -11,7 +11,7 @@ const Home = () => {
     >
       <Navbar />
 
-      <div className="min-h-screen w-full bg-black/70 px-8 pt-24 pb-10">
+      <div className="min-h-screen w-full bg-black/70 px-8 pt-120 pb-10">
         
         <h1 className="text-white text-4xl font-bold text-center mb-12">
           Movie List
@@ -24,6 +24,8 @@ const Home = () => {
               title={movie.title}
               image={movie.image}
               year={movie.year}
+              rating={movie.rating}
+              description={movie.description}
             />
           ))}
         </div>
