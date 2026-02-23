@@ -1,18 +1,19 @@
-import Home from './pages/Home.jsx'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignUp from './pages/SignUp';
+import './App.css';
 
 function App() {
-  
-
   return (
-    <>
-     <div className="bg-black text-white h-screen flex items-center justify-center text-3xl">
-      
-      <Home/>
-    </div>
-      
-    </>
-  )
+    <BrowserRouter>
+      <div className="min-h-screen bg-black text-white">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
