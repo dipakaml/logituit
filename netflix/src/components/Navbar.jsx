@@ -8,14 +8,16 @@ const Navbar = () => {
            src={logo} alt="MovieFlix Logo"
            className='h-8 w-auto object-contain' />
         </div>
-         <nav>
+         <nav className='flex  *:items-center gap-6'>
           <ul className="hidden md:flex gap-6 text-white text-sm font-medium">
             <li className="hover:text-red-500 cursor-pointer">Home</li>
             <li className="hover:text-red-500 cursor-pointer">Movies</li>
             <li className="hover:text-red-500 cursor-pointer">TV Shows</li>
-            <li className="hover:text-red-500 cursor-pointer">My List</li>
+            <li className="hover:text-red-500 cursor-pointer">List</li>
           </ul>
-        </nav>
+          <button className='bg-red-500 rounded-md transition text-sm p-1  hover:bg-red-300 cursor-pointer hover:text-blue-500'>Signup
+            </button>     
+             </nav>
        </div>
        
     </header>
